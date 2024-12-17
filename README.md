@@ -58,31 +58,31 @@ python baseauthhammer.py -H <URL> [-u USERNAME | -U USERLIST] [-p PASSWORD | -P 
 python baseauthhammer.py -H http://example.com -u admin -P passwords.txt
 ```
 
-1. Brute-force using a list of usernames and passwords:
+2. Brute-force using a list of usernames and passwords:
 
 ```bash
 python baseauthhammer.py -H http://example.com -U users.txt -P passwords.txt
 ```
 
-1. Brute-force with a delay of 2 seconds between attempts:
+3. Brute-force with a delay of 2 seconds between attempts:
 
 ```bash
 python baseauthhammer.py -H http://example.com -u admin -P passwords.txt -d 2
 ```
 
-1. Brute-force with 5 threads for faster execution:
+4. Brute-force with 5 threads for faster execution:
 
 ```bash
 python baseauthhammer.py -H http://example.com -U users.txt -P passwords.txt -t 5
 ```
 
-1. Save successful credentials to a file:
+5. Save successful credentials to a file:
 
 ```bash
 python baseauthhammer.py -H http://example.com -u admin -P passwords.txt -o success.txt
 ```
 
-1. Use proxy for traffic routing:
+6. Use proxy for traffic routing:
 
 ```bash
 python baseauthhammer.py -H http://example.com -u admin -P passwords.txt -x
